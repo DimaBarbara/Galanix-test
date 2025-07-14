@@ -1,0 +1,106 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 50px 0;
+  background: #eee;
+}
+
+.flag {
+  width: 300px;
+  border: 1px solid #333;
+  position: relative;
+}
+
+.ukraine {
+  height: 200px;
+  background: linear-gradient(to bottom, #0057b7 50%, #ffd700 50%);
+}
+
+.japan {
+  height: 200px;
+  background: white;
+}
+
+.japan::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: red;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.iceland {
+  position: relative;
+  height: 200px;
+  background: #003897;
+}
+.iceland::before,
+.iceland::after {
+  content: "";
+  position: absolute;
+  background: white;
+}
+
+.iceland::before {
+  width: 15%;
+  height: 100%;
+  left: 30%;
+}
+
+.iceland::after {
+  width: 100%;
+  height: 20%;
+  top: 40%;
+}
+
+.iceland span {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.iceland span::before,
+.iceland span::after {
+  content: "";
+  position: absolute;
+  background: #d72828;
+}
+
+.iceland span::before {
+  width: 7%;
+  height: 100%;
+  left: 34%;
+}
+
+.iceland span::after {
+  width: 100%;
+  height: 10%;
+  top: 45%;
+}
+
+.czech {
+  height: 200px;
+  background: linear-gradient(to bottom, white 50%, red 50%);
+  overflow: hidden;
+}
+
+.czech::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 100px solid transparent;
+  border-bottom: 100px solid transparent;
+  border-left: 150px solid blue;
+  left: 0;
+  top: 0;
+}
