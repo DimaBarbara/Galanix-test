@@ -1,42 +1,136 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+.app-container {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.app-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 32px;
+  text-shadow: 1px 1px 2px #000;
+}
+
+.form {
+  display: flex;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.input {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  width: 300px;
+  max-width: 100%;
+}
+
+.button {
+  background: #00b894;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background: #019270;
+}
+
+.button.reset {
+  background: #d63031;
+}
+
+.button.reset:hover {
+  background: #b71c1c;
+}
+
+.saved-count {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  color: #333;
+  overflow-x: auto;
+  display: block;
+}
+
+.table th,
+.table td {
+  border: 1px solid #ddd;
+  padding: 10px;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.table th {
+  background: #00b894;
+  color: #fff;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.table tr:nth-child(even) {
+  background: #f2f2f2;
+}
+
+.message {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.message.error {
+  color: #e74c3c;
+}
+
+@media (max-width: 900px) {
+  .app-title {
+    font-size: 24px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .input {
+    width: 80%;
+  }
+
+  .button {
+    width: 80%;
+    text-align: center;
+  }
+
+  .form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .table {
+    font-size: 14px;
+  }
+
+  .table th,
+  .table td {
+    padding: 8px;
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+@media (max-width: 500px) {
+  .app-container {
+    margin: 20px auto;
+    padding: 10px;
   }
-}
 
-.card {
-  padding: 2em;
-}
+  .app-title {
+    font-size: 20px;
+  }
 
-.read-the-docs {
-  color: #888;
+  .table {
+    font-size: 12px;
+  }
 }

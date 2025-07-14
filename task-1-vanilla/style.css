@@ -8,6 +8,7 @@ body {
 }
 
 .flag {
+  box-sizing: border-box;
   width: 300px;
   border: 1px solid #333;
   position: relative;
