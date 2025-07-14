@@ -1,0 +1,26 @@
+.divButton {
+  text-align: center;
+  margin-top: 40px;
+}
+.button {
+  background: #ff6f61;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(255, 111, 97, 0.4);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button:hover {
+  background: #ff503f;
+  box-shadow: 0 8px 20px rgba(255, 80, 63, 0.6);
+}
+
+.button:active {
+  background: #e04637;
+  box-shadow: 0 3px 10px rgba(224, 70, 55, 0.8);
+}

@@ -1,0 +1,42 @@
+.main-div {
+  background: linear-gradient(135deg, #2c3e50, #4ca1af);
+  padding: 20px;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+.divInfo {
+  background: #ff6f61;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  line-height: 1.4;
+  max-width: 250px;
+  margin: 20px auto;
+  text-align: center;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 5px 15px rgba(255, 111, 97, 0.4);
+  transition: transform 0.2s ease;
+}
+
+.divInfo:hover {
+  transform: translateY(-2px);
+}
+.noImagesMessage {
+  text-align: center;
+  color: #fff;
+  background: #ff6f61;
+  padding: 20px 30px;
+  border-radius: 10px;
+  font-size: 22px;
+  font-weight: 600;
+  max-width: 400px;
+  margin: 50px auto;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 5px 15px rgba(255, 111, 97, 0.4);
+  transition: transform 0.2s ease;
+}
+
+.noImagesMessage:hover {
+  transform: translateY(-2px);
+}
